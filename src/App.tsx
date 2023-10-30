@@ -1,8 +1,9 @@
 import classes from './App.module.scss'
+import Header from './layout/Header';
 
 function App() {
   return (
-    <h1 className={classes.apps}>Hello There!</h1>
+    <Header />
   );
 }
 

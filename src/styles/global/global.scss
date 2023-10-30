@@ -67,10 +67,12 @@ select {
   }
 }
 
-
-
 img {
   image-rendering: -webkit-optimize-contrast;
+}
+
+.container {
+  max-width: 120rem;
 }
 
 
