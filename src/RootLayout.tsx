@@ -1,12 +1,15 @@
 import React from "react";
 import Header from "./layout/Header";
-import { Outlet } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
 const Cs = () => {
   return (
     <>
       <Header />
       <main>
-        <Outlet />
+        <Home />
+        <About />        
       </main>
     </>
   );

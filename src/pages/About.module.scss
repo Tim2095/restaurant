@@ -1,0 +1,75 @@
+@import "../styles/variables/variables.scss";
+@import '../styles/mixins/mixins.scss';
+
+#about {
+  background: $orange;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+
+  .about-cnt {
+    @include flex(space-between);
+
+    .about-section-cnt {
+      width: 50%;
+
+      .about-title {
+        color: $black-primary;
+        font-family: Times New Roman;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-style: italic;
+        margin-bottom: 6rem;
+      }
+
+      .welcome {
+        color: $white-primary;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 9rem;
+        font-family: Lily Script One;
+        margin-bottom: 2;
+      }
+
+      .about-info {
+        color: #EDEDED;
+        font-family: Times New Roman;
+        font-size: 1.8rem;
+        width: 90%;
+        text-align: center;
+      }
+
+      .info-second-part {
+        margin-top: 3rem;
+      }
+
+      .about-menu-btn {
+        margin-top: 13rem;
+        padding: 0.5rem 1.6rem 0.5rem 1.6rem;
+        border-radius: 1.6rem;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: $orange;
+        font-family: Poppins;
+        font-size: 1.6rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+    .about-img-cnt {
+      width: 50%;
+      position: relative;
+      @include flex(flex-end);
+      
+      .about-first-img {
+        position: absolute;
+        left: 20px;
+        top: 6rem;
+      }
+
+      .about-second-img {
+        align-self: flex-end;
+        justify-self: flex-end;
+      }
+    }
+  }
+}
