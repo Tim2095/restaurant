@@ -2,6 +2,16 @@ import classes from './Header.module.scss'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+
+  const smoothScrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <header className={classes.header}>
       <nav className={`${classes.nav} container`}>
@@ -10,7 +20,7 @@ const Header = () => {
         </ul>
         <ul>
           <li><NavLink className={classes.link} to='/'>Home</NavLink></li>
-          <li><NavLink className={classes.link} to='about'>About</NavLink></li>
+          <li><a className={classes.link} onClick={() => smoothScrollToSection('about')}>About</a></li>
           <li><NavLink className={classes.link} to='contact'>Contact</NavLink></li>
           <li><NavLink className={classes['menu-link']} to='menu'>Menu</NavLink></li>
         </ul>

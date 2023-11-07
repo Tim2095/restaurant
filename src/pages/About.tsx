@@ -4,7 +4,7 @@ import aboutTwo from "../assets/img/about-2.png";
 
 const About = () => {
   return (
-    <section id={classes.about}>
+    <section id="about" className={classes.about}>
       <div className={`${classes["about-cnt"]} container`}>
         <div className={classes["about-section-cnt"]}>
           <div className={classes["about-title"]}>About Us</div>
