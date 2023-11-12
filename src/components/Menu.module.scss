@@ -1,0 +1,59 @@
+@import '../styles/mixins/mixins.scss';
+@import '../styles/variables/variables.scss';
+
+
+.menu-cnt {
+  background: $orange;
+  padding: 4rem;
+  .menu-heading {
+    text-align: center;
+    margin-bottom: 2.2rem;
+
+    h3 {
+      color: $white-primary;
+      font-size: 5rem;
+      font-family: Lily Script One;
+      font-weight: 400;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .dish-menu-cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    background-color: $black-secondary; 
+    border-radius: 3.4rem;
+    justify-items: center;
+    padding: 4.1rem;
+    color: $white-primary;
+
+    .dish-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 2.3rem;
+      justify-items: center;
+      align-items: center;
+      width: 80%;
+      padding: 2rem;
+
+      .dish-img-cnt {
+        width: 11.1rem;
+        height: 11.1rem;
+      }
+
+      .product-title {
+        color: $white-primary;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Times New Roman;
+        font-size: 3rem;
+        font-weight: 700;
+      } 
+
+      .dish-details-cnt {
+        justify-self: start;
+      }
+    }
+
+  }
+}

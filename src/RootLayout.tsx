@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./layout/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Menu from "./components/Menu";
+import Footer from "./layout/Footer";
 
 const Cs = () => {
   return (
@@ -9,7 +11,9 @@ const Cs = () => {
       <Header />
       <main>
         <Home />
-        <About />        
+        <About />  
+        <Menu />   
+        <Footer />   
       </main>
     </>
   );

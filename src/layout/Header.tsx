@@ -22,7 +22,7 @@ const Header = () => {
           <li><NavLink className={classes.link} to='/'>Home</NavLink></li>
           <li><a className={classes.link} onClick={() => smoothScrollToSection('about')}>About</a></li>
           <li><NavLink className={classes.link} to='contact'>Contact</NavLink></li>
-          <li><NavLink className={classes['menu-link']} to='menu'>Menu</NavLink></li>
+          <li><a className={classes['menu-link']} onClick={() => smoothScrollToSection('menu')}>Menu</a></li>
         </ul>
       </nav>
     </header>

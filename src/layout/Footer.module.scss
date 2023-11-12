@@ -1,0 +1,100 @@
+@import "../styles/variables/variables.scss";
+@import "../styles/mixins/mixins.scss";
+
+.footer {
+  height: 100vh;
+  background-image: url("../assets/img/footer.jpg");
+  background-color: lightgray;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .footer-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .footer-item {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .footer-title {
+    color: #fff;
+    font-family: Lily Script One;
+    font-size: 6.1rem;
+  }
+
+  .footer-subtitle {
+    color: $orange;
+    font-family: Poppins;
+    font-size: 3.2rem;
+  }
+
+  .footer-description {
+    color: $white-primary;
+    font-family: Times New Roman;
+    font-size: 1.4rem;
+  }
+
+  .footer-logo-cnt {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 3.6rem;
+    align-items: center;
+
+  }
+
+  .location {
+    display: flex;
+    flex-flow: column;
+    color: $white-primary;
+    margin-top: 2rem;
+
+    .geo-title {
+      color: $orange;
+      font-family: Times New Roman;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .geo-details,
+    .geo-specific-details {
+      color: $white-primary;
+      font-family: Times New Roman;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+
+    .contact-title {
+      color: $orange;
+      font-family: Times New Roman;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+
+    .contact-phone,
+    .contact-email {
+      color: $white-primary;
+      font-size: 2rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}
