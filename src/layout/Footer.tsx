@@ -6,7 +6,7 @@ import youtubeLogo from "../assets/logo/youtube.png";
 
 const Footer = () => {
   return (
-    <footer className={classes.footer}>
+    <footer className={classes.footer} id="contact">
       <div className={classes.overlay}>
         <div className={`${classes["footer-cnt"]} container-secondary`}>
           <div className={classes["footer-item"]}>
