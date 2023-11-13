@@ -57,7 +57,7 @@ const Menu = () => {
           {menu.map((dish) => (
             <div className={classes['dish-item']} key={dish.id}>
               <div className={classes['dish-img-cnt']}>
-                <img src={dish.img} className={classes.pen} loading="lazy" />
+                <img src={dish.img} className={classes.pen} loading="lazy" alt="dish-img" />
               </div>
               <div className={classes['dish-details-cnt']}>
                 <p className={classes["product-title"]}>{dish.title}</p>
