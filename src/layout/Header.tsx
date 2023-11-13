@@ -17,7 +17,7 @@ const Header = () => {
       <nav className={`${classes.nav} container`}>
         <ul>
           <li>
-            <a className={classes.logo}>Quibeez</a>
+            <NavLink to='/' className={classes.logo}>Quibeez</NavLink>
           </li>
         </ul>
         <ul>
@@ -27,7 +27,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <a
+            <a href="#about"
               className={classes.link}
               onClick={() => smoothScrollToSection("about")}
             >
@@ -36,7 +36,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a
+            <a href="#contact"
               className={classes.link}
               onClick={() => smoothScrollToSection("contact")}
             >
@@ -44,7 +44,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a
+            <a href="#menu"
               className={classes["menu-link"]}
               onClick={() => smoothScrollToSection("menu")}
             >
