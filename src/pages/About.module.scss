@@ -8,6 +8,8 @@
 
   .about-cnt {
     @include flex(space-between);
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     .about-section-cnt {
       width: 50%;
