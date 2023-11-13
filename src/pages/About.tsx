@@ -24,8 +24,8 @@ const About = () => {
           <button className={classes['about-menu-btn']}>Today's menu</button>
         </div>
         <div className={classes["about-img-cnt"]}>
-          <img className={classes["about-first-img"]} src={aboutOne} />
-          <img className={classes["about-second-img"]} src={aboutTwo} />
+          <img className={classes["about-first-img"]} src={aboutOne} alt="food-img"/>
+          <img className={classes["about-second-img"]} src={aboutTwo} alt="food-img"/>
         </div>
       </div>
     </section>
