@@ -1,6 +1,6 @@
 import classes from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
-import { FaBars } from 'react-icons/fa';
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const smoothScrollToSection = (id: string) => {
@@ -17,7 +17,7 @@ const Header = () => {
       <nav className={`${classes.nav} container`}>
         <ul>
           <li>
-            <a href="#" className={classes.logo}>Quibeez</a>
+            <a className={classes.logo}>Quibeez</a>
           </li>
         </ul>
         <ul>
@@ -27,7 +27,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <a href=""
+            <a
               className={classes.link}
               onClick={() => smoothScrollToSection("about")}
             >
@@ -36,7 +36,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href=""
+            <a
               className={classes.link}
               onClick={() => smoothScrollToSection("contact")}
             >
@@ -44,14 +44,16 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href=""
+            <a
               className={classes["menu-link"]}
               onClick={() => smoothScrollToSection("menu")}
             >
               Menu
             </a>
           </li>
-          <li><FaBars className={classes['mobile-menu']} /></li>
+          <li>
+            <FaBars className={classes["mobile-menu"]} />
+          </li>
         </ul>
       </nav>
     </header>
