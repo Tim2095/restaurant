@@ -27,7 +27,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <a href="about"
+            <a href=""
               className={classes.link}
               onClick={() => smoothScrollToSection("about")}
             >
@@ -36,7 +36,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="contact"
+            <a href=""
               className={classes.link}
               onClick={() => smoothScrollToSection("contact")}
             >
@@ -44,7 +44,7 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="menu"
+            <a href=""
               className={classes["menu-link"]}
               onClick={() => smoothScrollToSection("menu")}
             >
