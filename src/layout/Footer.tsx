@@ -4,6 +4,7 @@ import instagramLogo from "../assets/logo/instagram.png";
 import twitterLogo from "../assets/logo/twitter.png";
 import youtubeLogo from "../assets/logo/youtube.png";
 
+
 const Footer = () => {
   return (
     <footer className={classes.footer} id="contact">
