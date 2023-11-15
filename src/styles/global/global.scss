@@ -80,3 +80,10 @@ img {
   max-width: 101rem;
   margin: 0 auto;
 }
+
+// 1200 px
+@media(max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
