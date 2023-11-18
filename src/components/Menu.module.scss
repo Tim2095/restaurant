@@ -1,6 +1,5 @@
-@import '../styles/mixins/mixins.scss';
-@import '../styles/variables/variables.scss';
-
+@import "../styles/mixins/mixins.scss";
+@import "../styles/variables/variables.scss";
 
 .menu-cnt {
   background: $orange;
@@ -22,7 +21,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    background-color: $black-secondary; 
+    background-color: $black-secondary;
     border-radius: 3.4rem;
     justify-items: center;
     padding: 4.1rem;
@@ -48,12 +47,21 @@
         font-family: Times New Roman;
         font-size: 3rem;
         font-weight: 700;
-      } 
+      }
 
       .dish-details-cnt {
         justify-self: start;
       }
     }
-
   }
+}
+
+//960 px
+@media (max-width: 60em) {
+  .menu-cnt {
+    .dish-menu-cnt {
+      display: flex;
+      flex-direction: column;
+    }
+  } 
 }

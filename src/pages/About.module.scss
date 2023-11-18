@@ -37,6 +37,7 @@
         font-size: 1.8rem;
         width: 90%;
         text-align: center;
+        text-align: left;
       }
 
       .info-second-part {
@@ -73,5 +74,14 @@
         justify-self: flex-end;
       }
     }
+  }
+}
+
+
+//1088 px
+@media(max-width: 68em) {
+  .about-second-img {
+    position: relative;
+    display: none;
   }
 }
