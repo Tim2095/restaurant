@@ -87,3 +87,22 @@ img {
     font-size: 56.25%;
   }
 }
+
+@media(max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media(max-width: 48em) {
+  /* Styles for phones */
+  html {
+    font-size: 43.75%;
+  }
+}

@@ -11,7 +11,7 @@
     h3 {
       color: $white-primary;
       font-size: 5rem;
-      font-family: Lily Script One;
+      font-family: "Lily Script One";
       font-weight: 400;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -44,7 +44,7 @@
       .product-title {
         color: $white-primary;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-family: Times New Roman;
+        font-family: "Times New Roman";
         font-size: 3rem;
         font-weight: 700;
       }
@@ -63,5 +63,16 @@
       display: flex;
       flex-direction: column;
     }
-  } 
+  }
+}
+
+@media (max-width: 47em) {
+  .menu-cnt {
+    .dish-menu-cnt {
+      @include flex(center, center, column);
+      .dish-item {
+        @include flex(center, center, column);
+      }
+    }
+  }
 }

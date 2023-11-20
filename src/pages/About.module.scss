@@ -1,5 +1,5 @@
 @import "../styles/variables/variables.scss";
-@import '../styles/mixins/mixins.scss';
+@import "../styles/mixins/mixins.scss";
 
 .about {
   background: $orange;
@@ -29,15 +29,15 @@
         font-size: 9rem;
         font-family: Lily Script One;
         margin-bottom: 2;
+        text-align: center;
       }
 
       .about-info {
-        color: #EDEDED;
+        color: #ededed;
         font-family: Times New Roman;
         font-size: 1.8rem;
         width: 90%;
-        text-align: center;
-        text-align: left;
+        text-align: left
       }
 
       .info-second-part {
@@ -62,7 +62,7 @@
       width: 50%;
       position: relative;
       @include flex(flex-end);
-      
+
       .about-first-img {
         position: absolute;
         left: 20px;
@@ -77,11 +77,38 @@
   }
 }
 
-
 //1088 px
-@media(max-width: 68em) {
-  .about-second-img {
-    position: relative;
+@media (max-width: 68em) {
+  .about-first-img {
     display: none;
+  }
+}
+
+@media (max-width: 47em) {
+  .about {
+    .about-cnt {
+      @include flex(center, center, column);
+
+      .about-section-cnt {
+        width: 100%;
+
+        .about-info {
+          text-align: center;
+        }
+
+        .about-btn-cnt {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+
+          .about-menu-btn {
+            margin: 2rem;
+          }
+        }
+      
+      }
+
+  
+    }
   }
 }

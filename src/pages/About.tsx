@@ -14,18 +14,28 @@ const About = () => {
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even slightly
             believable.
-            <span className={classes['info-second-part']}>
+            <span className={classes["info-second-part"]}>
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even
               slightly believable.
             </span>
           </p>
-          <button className={classes['about-menu-btn']}>Today's menu</button>
+          <div className={classes['about-btn-cnt']}>
+            <button className={classes["about-menu-btn"]}>Today's menu</button>
+          </div>
         </div>
         <div className={classes["about-img-cnt"]}>
-          <img className={classes["about-first-img"]} src={aboutOne} alt="food-img"/>
-          <img className={classes["about-second-img"]} src={aboutTwo} alt="food-img"/>
+          <img
+            className={classes["about-first-img"]}
+            src={aboutOne}
+            alt="food-img"
+          />
+          <img
+            className={classes["about-second-img"]}
+            src={aboutTwo}
+            alt="food-img"
+          />
         </div>
       </div>
     </section>
