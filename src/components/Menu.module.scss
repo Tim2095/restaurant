@@ -72,6 +72,10 @@
       @include flex(center, center, column);
       .dish-item {
         @include flex(center, center, column);
+
+        .product-title {
+          text-align: center;
+        }
       }
     }
   }
