@@ -87,6 +87,12 @@
 @media (max-width: 47em) {
   .about {
     .about-cnt {
+      .about-img-cnt {
+        width: 100%;
+        @include flex(center, center,)
+      }
+    
+
       @include flex(center, center, column);
 
       .about-section-cnt {

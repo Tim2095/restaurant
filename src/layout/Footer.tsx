@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={classes.overlay}>
         <div className={`${classes["footer-cnt"]} container-secondary`}>
           <div className={classes["footer-item"]}>
-            <div>
+            <div className={classes['footer-main-info']}>
               <h3 className={classes["footer-title"]}>Quibeez</h3>
               <p className={classes["footer-subtitle"]}>RESTAURANT</p>
               <p className={classes["footer-description"]}>
